@@ -8,7 +8,6 @@ import utils
 from telebot import types
 from SQLighter import SQLighter
 
-
 bot = telebot.TeleBot(config.token)
 
 
