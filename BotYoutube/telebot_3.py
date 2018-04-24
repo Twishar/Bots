@@ -62,7 +62,14 @@ def handle_text(message):
 
     elif message.text == 'голос':
         # В формате ogg
-        voice = open(config.voice_directory + '/' +'voice_id', 'rb')
+        voice = open(config.voice_directory + '/' + 'voice_id', 'rb')
+        bot.send_chat_action(message.from_user.id, 'upload_audio')
+        bot.send_voice(message.from_user.id, voice)
+        voice.close()
+
+    elif message.text == 'локация':
+        bot.send_chat_action(message.from_user.id, 'find_location')
+        bot.send_location(message.from_user.id, 54.5175971, 42.9631043)
 
 
 bot.polling(none_stop=True)
