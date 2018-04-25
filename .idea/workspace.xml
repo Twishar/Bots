@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a03a78ad-d262-4d22-86e8-6de843bde19c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/AdditionalyInfo/cutom_keyboard.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AdditionalyInfo/decorator_sample_bot.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AdditionalyInfo/py_telegram_bot_api.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cutom_keyboard.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cutom_keyboard.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AdditionalyInfo/cutom_keyboard.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -99,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <state relative-caret-position="72">
+              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -175,7 +172,6 @@
         <option value="$PROJECT_DIR$/TProg.py" />
         <option value="$PROJECT_DIR$/TProger/TProg.py" />
         <option value="$PROJECT_DIR$/BotYoutube/index.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/BotYoutube/main.py" />
         <option value="$PROJECT_DIR$/BotYoutube/config.py" />
         <option value="$PROJECT_DIR$/BotYoutube/telebot_3.py" />
@@ -192,6 +188,7 @@
         <option value="$PROJECT_DIR$/py_telegram_bot_api.py" />
         <option value="$PROJECT_DIR$/decorator_sample_bot.py" />
         <option value="$PROJECT_DIR$/AdditionalyInfo/cutom_keyboard.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -712,14 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dialog_bot/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -773,6 +762,14 @@
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

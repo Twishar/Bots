@@ -1,6 +1,7 @@
 venv/*
 config.py
-.idea/*
+.idea
+__pycache__
 shelve.db
 BotYoutube/index.html
 BotYoutube/files
