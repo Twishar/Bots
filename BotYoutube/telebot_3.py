@@ -25,7 +25,7 @@ def handle_start(message):
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
     if message.text == 'фото':
-        # all_files_in_directory = os.listdir(config.photo_directory)
+        # all_files_in_directory = os.listdir(config.py.photo_directory)
         # random_file = random.choice(all_files_in_directory)
         url = 'https://goo.gl/58RCFF'
         urlib2.urlretrieve(url, 'url_image.jpg')

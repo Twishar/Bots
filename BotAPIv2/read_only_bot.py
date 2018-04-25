@@ -22,7 +22,7 @@ def get_language(lang_code):
 
 
 restricted_messages = ["че по дедлайнам?, мы в дерьме...", "i am vegan"]
-#  and message.chat.id == config.GROUP_ID
+#  and message.chat.id == config.py.GROUP_ID
 
 
 # Выдаём Read-only за определённые фразы
