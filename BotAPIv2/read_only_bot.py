@@ -21,7 +21,7 @@ def get_language(lang_code):
         return "en"
 
 
-restricted_messages = ["че по дедлайнам?, мы в дерьме...", "i am vegan"]
+restricted_messages = ["js рулит", "i am vegan"]
 #  and message.chat.id == config.py.GROUP_ID
 
 
@@ -29,7 +29,7 @@ restricted_messages = ["че по дедлайнам?, мы в дерьме...",
 @bot.message_handler(func=lambda message: message.text and message.text.lower() in restricted_messages)
 def set_ro(message):
     bot.restrict_chat_member(message.chat.id, message.from_user.id, until_date=time()+600)
-    bot.send_message(message.chat.id, "Вам запрещено отправлять сюда сообщения в течение 10 минут. Вы слишком горите!",
+    bot.send_message(message.chat.id, "Сорри, вы ебобо фронтендер)))",
                      reply_to_message_id=message.message_id)
 
 
