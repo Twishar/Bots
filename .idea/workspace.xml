@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a03a78ad-d262-4d22-86e8-6de843bde19c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/3_Lib_Telepot/simple/skeleton.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Next_Steps/registr_next_step_bot.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Support_bot/bot_users.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Support_bot/main.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/3_Lib_Telepot/simple/skeleton_async.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/3_Lib_Telepot/simple/skeleton_route.py" />
       <change beforePath="$PROJECT_DIR$/.idea/Bots.iml" afterPath="$PROJECT_DIR$/.idea/Bots.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,6 +22,7 @@
     <SUITE FILE_PATH="coverage/Bots$text_formating_bot.coverage" NAME="text_formating_bot Coverage Results" MODIFIED="1524667049846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Bots$voices.coverage" NAME="voices Coverage Results" MODIFIED="1524224826997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Bots$example.coverage" NAME="example Coverage Results" MODIFIED="1524227598328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Bots$skeleton_async.coverage" NAME="skeleton_async Coverage Results" MODIFIED="1524833580548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3_Lib_Telepot/simple" />
     <SUITE FILE_PATH="coverage/Bots$bot__1_.coverage" NAME="bot (1) Coverage Results" MODIFIED="1524743232540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ii_bot_dialog_flow" />
     <SUITE FILE_PATH="coverage/Bots$skeleton.coverage" NAME="skeleton Coverage Results" MODIFIED="1524828854447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3_Lib_Telepot/simple" />
     <SUITE FILE_PATH="coverage/Bots$Notification.coverage" NAME="Notification Coverage Results" MODIFIED="1524735099737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BotAPIv2" />
@@ -72,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Support_bot/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="774">
+              <caret line="76" column="11" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="11" />
               <folding>
                 <element signature="e#1#10#0" expanded="true" />
               </folding>
@@ -84,12 +81,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="telebot_users.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Support_bot/telebot_users.json">
+      <file leaf-file-name="skeleton_async.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3_Lib_Telepot/simple/skeleton_async.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="72">
+              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skeleton_route.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/3_Lib_Telepot/simple/skeleton_route.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+              <folding>
+                <element signature="e#1#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,8 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/voices.py" />
         <option value="$PROJECT_DIR$/sqlite.sql" />
         <option value="$PROJECT_DIR$/test_2(another_lib).py" />
         <option value="$PROJECT_DIR$/example.py" />
@@ -183,6 +190,8 @@
         <option value="$PROJECT_DIR$/support_bot.py" />
         <option value="$PROJECT_DIR$/Support_bot/support_bot.py" />
         <option value="$PROJECT_DIR$/Support_bot/main.py" />
+        <option value="$PROJECT_DIR$/3_Lib_Telepot/simple/skeleton_async.py" />
+        <option value="$PROJECT_DIR$/3_Lib_Telepot/simple/skeleton_route.py" />
       </list>
     </option>
   </component>
@@ -223,7 +232,13 @@
             <path>
               <item name="Bots" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bots" type="462c0819:PsiDirectoryNode" />
-              <item name="Support_bot" type="462c0819:PsiDirectoryNode" />
+              <item name="3_Lib_Telepot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bots" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bots" type="462c0819:PsiDirectoryNode" />
+              <item name="3_Lib_Telepot" type="462c0819:PsiDirectoryNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bots" type="b2602c69:ProjectViewProjectNode" />
@@ -272,7 +287,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.skeleton_async">
     <configuration name="bot (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -306,25 +321,6 @@
       <module name="python_vs_js_bot" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python_vs_js_bot/bot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="bot_api_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BotAPIv2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Bots" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BotAPIv2/bot_api_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -368,20 +364,39 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="skeleton_async" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/3_Lib_Telepot/simple" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Bots" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3_Lib_Telepot/simple/skeleton_async.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.bot_api_v2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.bot (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.skeleton" />
-      <item index="3" class="java.lang.String" itemvalue="Python.bot" />
-      <item index="4" class="java.lang.String" itemvalue="Python.main" />
+      <item index="0" class="java.lang.String" itemvalue="Python.bot (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.skeleton" />
+      <item index="2" class="java.lang.String" itemvalue="Python.bot" />
+      <item index="3" class="java.lang.String" itemvalue="Python.main" />
+      <item index="4" class="java.lang.String" itemvalue="Python.skeleton_async" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.bot" />
-        <item index="2" class="java.lang.String" itemvalue="Python.skeleton" />
-        <item index="3" class="java.lang.String" itemvalue="Python.bot (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.bot_api_v2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.skeleton_async" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
+        <item index="2" class="java.lang.String" itemvalue="Python.bot" />
+        <item index="3" class="java.lang.String" itemvalue="Python.skeleton" />
+        <item index="4" class="java.lang.String" itemvalue="Python.bot (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -440,20 +455,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Music/music.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Music/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="68" column="50" lean-forward="false" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Music/SQLighter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -774,10 +775,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Support_bot/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="774">
+          <caret line="76" column="11" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="11" />
           <folding>
             <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_Lib_Telepot/simple/skeleton_async.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_Lib_Telepot/simple/skeleton_route.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
