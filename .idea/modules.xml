@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Bots.iml" filepath="$PROJECT_DIR$/.idea/Bots.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../python_vs_js_bot/.idea/python_vs_js_bot.iml" filepath="$PROJECT_DIR$/../python_vs_js_bot/.idea/python_vs_js_bot.iml" />
     </modules>
   </component>
 </project>
