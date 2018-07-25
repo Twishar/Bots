@@ -1,5 +1,6 @@
 venv/*
 config.py
+messages.py
 .idea
 __pycache__
 shelve.db
