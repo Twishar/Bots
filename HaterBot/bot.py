@@ -8,32 +8,15 @@ import config
 import telebot
 import requests
 import messages
-from flask import Flask
+from flask import Flask, request
 from flask_sslify import SSLify
 
 
 bot = telebot.TeleBot(config.telegram_token)
 app = Flask(__name__)
 sslify = SSLify(app)
-WEBHOOK_URL_PATH = "/{}/".format(config.telegram_token)
+WEBHOOK_URL_PATH = "/{}".format(config.telegram_token)
 WEBHOOK_URL_BASE = config.base_url_webhook
-
-
-@app.route('/', methods=['GET', 'HEAD'])
-def index():
-    return ''
-
-
-# Process webhook calls
-@app.route(WEBHOOK_URL_PATH, methods=['POST'])
-def webhook():
-    if flask.request.headers.get('content-type') == 'application/json':
-        json_string = flask.request.get_data().decode('utf-8')
-        update = telebot.types.Update.de_json(json_string)
-        bot.process_new_updates([update])
-        return ''
-    else:
-        flask.abort(403)
 
 
 @bot.message_handler(commands=['start'])
@@ -93,12 +76,23 @@ def any_message(message):
 
 
 # Remove webhook, it fails sometimes the set if there is a previous webhook
-bot.remove_webhook()
 
-time.sleep(0.1)
 
-# Set webhook
-bot.set_webhook(url=WEBHOOK_URL_BASE+WEBHOOK_URL_PATH)
+
+
+# Process webhook calls
+@app.route(WEBHOOK_URL_PATH, methods=['POST'])
+def getMessage():
+    bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
+    return "!", 200
+
+
+@app.route('/')
+def webhook():
+    bot.remove_webhook()
+    bot.set_webhook(url= WEBHOOK_URL_BASE + WEBHOOK_URL_PATH)
+    return "!", 200
+
 
 
 if __name__ == '__main__':
