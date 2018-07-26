@@ -5,6 +5,7 @@ import pyowm
 import flask
 import apiai
 import config
+import datetime
 import telebot
 import requests
 import messages
@@ -46,7 +47,7 @@ def give_forecast(message):
 @bot.message_handler(commands=['curs'])
 def currency_curs(message):
     url = 'http://bank-ua.com/export/exchange_rate_cash.json'
-    response_json = requests.get(url)
+    response_json = requests.get(url, threaded=F)
     usd = response_json.json()[-2]
     eur = response_json.json()[-3]
     text = "Курс валют по Привату:\n" \
@@ -79,6 +80,8 @@ def any_message(message):
 
 
 
+"""
+для деплоя
 
 # Process webhook calls
 @app.route(WEBHOOK_URL_PATH, methods=['POST'])
@@ -92,8 +95,9 @@ def webhook():
     bot.remove_webhook()
     bot.set_webhook(url= WEBHOOK_URL_BASE + WEBHOOK_URL_PATH)
     return "!", 200
-
+"""
 
 
 if __name__ == '__main__':
-    app.run()
+    bot.polling(none_stop=True)
+
