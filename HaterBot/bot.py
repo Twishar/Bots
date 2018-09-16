@@ -9,6 +9,10 @@ import datetime
 import telebot
 import requests
 import messages
+
+from parser_for_read import get_read_mang
+from ranobe_manga_links import read_links, webtoon_links
+from parser_for_webtoon import get_webtoon
 from flask import Flask, request
 from flask_sslify import SSLify
 
@@ -47,13 +51,28 @@ def give_forecast(message):
 @bot.message_handler(commands=['curs'])
 def currency_curs(message):
     url = 'http://bank-ua.com/export/exchange_rate_cash.json'
-    response_json = requests.get(url, threaded=F)
+    response_json = requests.get(url)
     usd = response_json.json()[-2]
     eur = response_json.json()[-3]
     text = "Курс валют по Привату:\n" \
            "USD:  Покупка: {}  ||  Продажа: {}\n" \
            "EUR:  Покупка: {}  ||  Продажа: {}".format(usd['rateBuy'], usd['rateSale'],
                                                        eur['rateBuy'], eur['rateSale'])
+
+    bot.send_message(message.chat.id, text)
+
+
+@bot.message_handler(commands=['manga'])
+def currency_curs(message):
+    text = '**Last Updates**\n\n'
+
+    text += 'Read Manga:\n'
+    for title, link in read_links.items():
+        text += '{}: {}  {}\n'.format(title, link, get_read_mang(link))
+
+    text += '\nWebtoon:\n'
+    for title, link in webtoon_links.items():
+        text += '{}: {}  {}\n'.format(title, link, get_webtoon(link))
 
     bot.send_message(message.chat.id, text)
 
@@ -78,11 +97,6 @@ def any_message(message):
 
 # Remove webhook, it fails sometimes the set if there is a previous webhook
 
-
-
-"""
-для деплоя
-
 # Process webhook calls
 @app.route(WEBHOOK_URL_PATH, methods=['POST'])
 def getMessage():
@@ -95,7 +109,6 @@ def webhook():
     bot.remove_webhook()
     bot.set_webhook(url= WEBHOOK_URL_BASE + WEBHOOK_URL_PATH)
     return "!", 200
-"""
 
 
 if __name__ == '__main__':
