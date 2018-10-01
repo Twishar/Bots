@@ -11,8 +11,9 @@ import requests
 import messages
 
 from parser_for_read import get_read_mang
-from ranobe_manga_links import read_links, webtoon_links
+from ranobe_manga_links import read_links, webtoon_links, ranobelib_links
 from parser_for_webtoon import get_webtoon
+from parser_for_ranobelib import get_ranobe
 from flask import Flask, request
 from flask_sslify import SSLify
 
@@ -63,7 +64,7 @@ def currency_curs(message):
 
 
 @bot.message_handler(commands=['manga'])
-def currency_curs(message):
+def manga(message):
     text = '**Last Updates**\n\n'
 
     text += 'Read Manga:\n'
@@ -73,6 +74,17 @@ def currency_curs(message):
     text += '\nWebtoon:\n'
     for title, link in webtoon_links.items():
         text += '{}: {}  {}\n'.format(title, link, get_webtoon(link))
+
+    bot.send_message(message.chat.id, text)
+
+
+@bot.message_handler(commands=['ranobe'])
+def ranobe(message):
+    text = '**Last Updates**\n\n'
+
+    text += 'RanobeLib:\n'
+    for title, link in ranobelib_links.items():
+        text += '{}: {}  {}\n'.format(title, link, get_ranobe(link))
 
     bot.send_message(message.chat.id, text)
 

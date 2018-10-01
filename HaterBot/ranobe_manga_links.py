@@ -13,3 +13,8 @@ webtoon_links = {
     'TOG': 'https://www.webtoons.com/en/fantasy/tower-of-god/list?title_no=95',
 
 }
+
+ranobelib_links = {
+    'Against': 'https://ranobelib.ru/against-the-gods/',
+    'Avatar': 'https://ranobelib.ru/avatar-korolya/',
+}
